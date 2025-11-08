@@ -1,0 +1,318 @@
+.donate-div{
+    display: flex;       
+    flex-direction: column; 
+    gap: 1.5rem;          
+    margin: 2rem 0 0 !important; 
+}
+.donate-header{
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between;
+    padding-left: 3rem;  
+}
+.right-donate-header{
+    position: relative; 
+    background-image: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E); 
+    border-top-left-radius: 0.75rem; 
+    border-bottom-left-radius: 1.5rem; 
+    color: #ffffff; 
+    font-size: 1.5rem;
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+}
+.square-donate-header-div{
+    display: flex;         
+    align-items: center;           
+    justify-content: center;      
+    position: absolute;       
+    right: -1rem;                  
+    top: 50%;                       
+    transform: translateY(-50%) translateX(25%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+}
+.square-donate-header{
+    position: relative;
+    background-image: linear-gradient(to right, #E8B98C, #AA8058); 
+    transform: rotate(45deg); 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    border-radius: 0.75rem; 
+    width: 50px;
+    height: 50px;
+}
+.link-donate-header{
+    font-size: 1.25rem;     
+    color: #16343A;           
+    cursor: pointer;         
+    transition-property: color; 
+    transition-duration: 150ms;
+      text-decoration: none;
+}
+.link-donate-header:hover{
+     color: #24645E; 
+}
+.donate-section{
+    position: relative;
+}
+@media (min-width: 768px) {
+  .donate-section {
+    padding-left: 2rem;  
+    padding-right: 2rem; 
+  }
+}
+.scroll-left-btn{
+    position: absolute;          
+    left: 1rem;                 
+    top: 50%;                   
+    transform: translateY(-50%); 
+    z-index: 1001;              
+    background-color: #ffffff;  
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+    border-radius: 9999px;      
+    padding: 0.5rem;          
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 150ms;  
+    transition-timing-function: ease-in-out;
+    border: none;
+}
+.scroll-left-btn:hover {
+  background-color: #f9fafb; 
+}
+@media (min-width: 768px) {
+  .scroll-left-btn {
+    left: 3rem; 
+  }
+}
+.svg-scroll-left-btn{
+    width: 1.5rem;       
+    height: 1.5rem;    
+    color: #17343B;  
+}
+.scroll-right-btn{
+    position: absolute;          
+    right: 1rem;               
+    top: 50%;                   
+    transform: translateY(-50%);
+    z-index: 1001;              
+    background-color: #ffffff;   
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 9999px;      
+    padding: 0.5rem;             
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 150ms; 
+    transition-timing-function: ease-in-out;
+    border: none;
+}
+.scroll-right-btn:hover {
+  background-color: #f9fafb; 
+}
+@media (min-width: 768px) {
+  .scroll-right-btn {
+    right: 3rem;
+  }
+}
+.svg-scroll-right-btn{
+    width: 1.5rem; 
+    height: 1.5rem;  
+    color: #17343B;
+}
+.right-donate-section{
+    position: absolute;           
+    top: 0;                      
+    right: 0;                     
+    height: 100%;               
+    width: 8rem;              
+    background-image: linear-gradient(to left, #ffffff, transparent); 
+    z-index: 1000;             
+    pointer-events: none; 
+}
+@media (min-width: 768px) {
+  .right-donate-section {
+    right: 2rem; 
+  }
+}
+.left-donate-section{
+    position: absolute;          
+    top: 0;                       
+    left: 0;                      
+    height: 100%;                 
+    width: 8rem;                  
+    background-image: linear-gradient(to right, #ffffff, transparent); 
+    z-index: 1000;                
+    pointer-events: none; 
+}
+@media (min-width: 768px) {
+  .left-donate-section {
+    left: 2rem;
+  }
+}
+.donate-cards-div {
+  display: flex;              
+  align-items: center;        
+  gap: 1.5rem;                 
+  overflow-x: auto;            
+  -ms-overflow-style: none;    /* إخفاء السكرول في Internet Explorer و Edge القديم */
+  scrollbar-width: none;       /* إخفاء السكرول في Firefox */
+}
+/* لإخفاء شريط التمرير في Chrome و Safari و Edge الحديث */
+.donate-cards-div::-webkit-scrollbar {
+  display: none; 
+}
+@media (min-width: 768px) {
+  .donate-cards-div {
+    padding-right: 2rem; 
+  }
+}
+
+/*--------------------------------- Card Style------------------------------------ */
+
+.card-section{
+    flex-shrink: 0;
+}
+.card-content{
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    gap: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 1.25rem; 
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -2px rgba(0, 0, 0, 0.1); 
+    background-image: linear-gradient(to top left, #DEDEDE, #FFFFFF); 
+    overflow: hidden;
+    min-height: 370px;
+    min-width: 320px
+}
+.img-card-content{
+    position: absolute; 
+    left: 0;            
+    top: 0;  
+}
+.card-information{
+    display: flex;        
+    flex-direction: column; 
+    flex: 1;               
+    gap: 1.25rem;           
+    position: relative;    
+    z-index: 10;   
+}
+.card-information-header{
+    display: flex;            
+    align-items: center;        
+    justify-content: space-between; 
+    gap: 1.5rem;  
+}
+.right-card-information-header{
+    display: flex;    
+    align-items: center; 
+    gap: 0.75rem;
+}
+.img-right-card-information-header{
+    width: 5rem;    
+    height: 5rem;            
+    object-fit: cover;       
+    border-radius: 0.5rem;  
+}
+.left-right-card-information-header{
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center; 
+    gap: 0.5rem;     
+}
+.left-right-card-information-header-btn{
+    width: fit-content;       
+    display: flex;          
+    align-items: center;  
+    gap: 0.5rem;            
+    color: #ffffff;         
+    font-weight: 600;      
+    padding-top: 0.5rem;   
+    padding-bottom: 0.5rem;  
+    padding-left: 1.25rem;   
+    padding-right: 1.25rem;  
+    border-radius: 0.5rem;    
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgb(36, 100, 94) -6.91%, rgb(24, 56, 61) 62.58%, rgb(23, 52, 59) 100%);
+}
+.img-left-right-card-information-header-btn{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.h2-left-right-card-information-header{
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.span-left-right-card-information-header{
+    color: #6B7280;
+}
+.hr-card-information{
+    height: 2px; 
+    width: 100%;
+    background-image: linear-gradient(to right, #17343B, #18383D, #24645E); /* bg-gradient-to-r from[...] via[...] to[...] */
+    border: 0; 
+    border-radius: 9999px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main-card-information{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.header-main-card-information{
+    display: flex;                  
+    align-items: center;          
+    justify-content: space-between;
+    font-size: 1rem;                
+    font-weight: 700;              
+    color: #16343A;    
+}
+.middle-main-card-information{
+    width: 100%;          
+    height: 9px;          
+    background-color: #E5E7EB; 
+    border-radius: 9999px;
+    overflow: hidden;   
+}
+.content-middle-main-card-information{
+    height: 100%;
+    background-image: linear-gradient(to right, #17343B, #18383D, #24645E);
+}
+.span-main-card-information{
+    color: #16343ACC;
+    text-align: start;
+}
+.card-btn-div{
+    display: flex;        
+    align-items: center;    
+    gap: 1rem;               
+    position: relative;     
+    z-index: 10;           
+    margin-top: auto;  
+}
+.card-btn{
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    padding-top: 0.75rem; 
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem; 
+    color: #ffffff; 
+    background-image: linear-gradient(to left, #17343B, #18383D, #24645E);
+    border: none;
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+}

@@ -1,0 +1,128 @@
+
+.ayah-section {
+  padding-top: 4rem;   
+  padding-bottom: 4rem;
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+}
+
+.ayah-container {
+  display: flex;         
+  flex-direction: column;    
+  gap: 3rem;                
+  align-items: center;  
+}
+
+.ayah-text {
+  text-align: center;  
+  margin-bottom: 3rem;
+}
+
+.ayah-verse {
+  font-size: 2.25rem;
+  line-height: 1.625;
+  font-weight: 600;
+  color: #16343a;
+  margin: 0 0;
+  text-align: center;
+  font-family: "Amiri", "Scheherazade New", "Arabic Typesetting", serif;
+}
+
+@media (min-width: 768px) {
+  .ayah-verse {
+    font-size: 3rem;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.service-card {
+  position: relative;
+  background: linear-gradient(to right, #ffffff, #cbcbcb);
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+.service-card:hover{
+    transform: translateY(-10px);
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2);
+}
+.card-icon-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background: linear-gradient(to right, #e8b98c, #aa8058);
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.card-icon {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem !important;
+  padding-top: 2.5rem;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.donate-btn-fristSec {
+  width: 100%;
+  background: linear-gradient(to right, #24645e, #18383d, #17343b);
+  border-bottom: 4px solid #8e6d4c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.donate-btn-fristSec:hover {
+  opacity: 0.9;
+  background-color: transparent !important;
+  border: none;
+    border-bottom: 4px solid #8e6d4c;
+}
+
+ 

@@ -1,0 +1,128 @@
+.service-container{
+    display: flex;       
+    flex-direction: column; 
+    gap: 1.5rem;          
+    margin: 2rem 0 0 !important; 
+}
+.service-header{ 
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between; 
+    padding-left: 3rem;  
+    width: 100%;
+}
+.right-service-header{
+  position: relative;
+  background: linear-gradient(to left, rgb(23,52,59), #18383D, #24645E);
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.square-service-header-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%) translateX(25%);
+}
+.square-service-header{
+    position: relative;
+    background-image: linear-gradient(to right, #E8B98C, #AA8058);
+    transform: rotate(45deg);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 0.75rem;
+    width: 50px;
+    height: 50px;
+}
+.link-service-header{
+    font-size: 1.25rem;     
+    color: #16343A;           
+    cursor: pointer;         
+    transition-property: color; 
+    transition-duration: 150ms;
+      text-decoration: none;
+}
+.link-service-header:hover{
+     color: #24645E; 
+}
+/* --------------------------------------------- */
+.service-section{
+    position: relative;
+}
+@media (min-width: 768px) {
+  .service-section {
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+}
+.service-card-div{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem; 
+}
+@media (min-width: 768px) {
+  .service-card-div {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    padding-right: 2rem;
+  }
+}
+/* ----------------------------------- */
+.serviveCard{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    padding: 1.5rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    background: linear-gradient(270deg, rgba(36, 100, 94, 0) 0%, rgba(24, 56, 61, 0.2) 69.49%, rgba(23, 52, 59, 0.4) 106.91%);
+}
+.serviveCard-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+} 
+.pra-serviveCard-header{
+    font-weight: 700; 
+    color: #17343B;
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    width: 100%;
+    text-align: start;
+    margin-bottom: 0;  
+}
+.pra-serviveCard{
+    font-weight: 500; 
+    color: #515151;
+    font-size: 1rem; 
+    line-height: 1.625rem;
+    z-index: 10;
+    margin-bottom: 1.25rem;
+}
+.img-serviceCard{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.serviveCard-btn{
+    background-color: #17343B; 
+    border-radius: 0.5rem; 
+    padding: 0.125rem; 
+    position: absolute;
+    left: 0.5rem; 
+    bottom: 0.5rem;
+    border: none;
+}

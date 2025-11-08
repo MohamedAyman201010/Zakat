@@ -1,0 +1,360 @@
+.main-login{
+    min-height: 100vh;     
+    display: flex;          
+    flex-direction: column; 
+}
+@media (min-width: 1024px) {
+  .main-login {
+    flex-direction: row;  
+  }
+}
+.background-right{
+    background-image: url('https://zakat-ecru-gamma.vercel.app/loginpage.png'); 
+    display: none;              
+    background-size: cover;    
+    background-position: center;
+}
+@media (min-width: 1024px) {
+  .background-right {
+    display: block;         
+    width: 50%;            
+  }
+}
+.left-main-login{
+    width: 100%;            
+    display: flex;            
+    align-items: center;        
+    justify-content: center;    
+    padding: 1rem;             
+    background-color: white;   
+}
+@media (min-width: 640px) {
+  .left-main-login {
+    padding: 1.5rem;         
+  }
+}
+@media (min-width: 768px) {
+  .left-main-login {
+    padding: 2rem;            
+  }
+}
+@media (min-width: 1024px) {
+  .left-main-login {
+    width: 50%;             
+    padding: 3rem;   
+  }
+}
+.left-main-login-content{
+    width: 100%;         
+    max-width: 28rem;       
+}
+@media (min-width: 640px) { 
+  .left-main-login-content {
+    max-width: 32rem;    
+  }
+}
+@media (min-width: 1024px) {
+  .left-main-login-content {
+    max-width: 36rem;   
+  }
+}
+.img-left-main-login-content{
+    height: 6rem;        
+    margin-bottom: 1.5rem; 
+    margin-left: auto;    
+    margin-right: auto;   
+}
+@media (min-width: 640px) {
+  .img-left-main-login-content {
+    height: 7rem;        
+  }
+}
+.title-left-main-login-content{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 640px) { 
+  .title-left-main-login-content {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1024px) { 
+  .title-left-main-login-content {
+    margin-bottom: 2.5rem; 
+  }
+}
+.h1-title-left-main-login-content{
+    font-size: 1.125rem; 
+    font-weight: 700;
+    color: #111827; 
+    margin-bottom: 0.75rem; 
+}
+@media (min-width: 640px) { 
+  .h1-title-left-main-login-content {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .h1-title-left-main-login-content {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem; 
+  }
+}
+.pra-title-left-main-login-content{
+    color: #4B5563;        
+    font-size: 0.875rem;    
+}
+@media (min-width: 640px) { 
+  .pra-title-left-main-login-content {
+    font-size: 1rem;    
+  }
+}
+@media (min-width: 1024px) { 
+  .pra-title-left-main-login-content {
+    font-size: 1.125rem; 
+  }
+}
+.inputs-div > * + * {
+  margin-top: 1rem; 
+}
+
+@media (min-width: 640px) {
+  .inputs-div > * + * {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .inputs-div > * + * {
+    margin-top: 2rem; 
+  }
+}
+.phone-label{
+    display: block;                
+    font-size: 0.875rem;            
+    line-height: 1.25rem;           
+    font-weight: 500;               
+    color: #374151;      
+    text-align: start;          
+    margin-bottom: 0.5rem;         
+}
+@media (min-width: 640px) {
+  .phone-label {
+    font-size: 1rem;             
+    line-height: 1.5rem;
+    margin-bottom: 0.75rem;      
+  }
+}
+@media (min-width: 1024px) {
+  .phone-label {
+    font-size: 1.125rem;          
+    line-height: 1.75rem;
+  }
+}
+.phone-input-div{
+    position: relative;
+}
+.phone-input{
+    width: 100%;                       
+  padding-left: 3rem;                
+  padding-right: 1rem;             
+  padding-top: 0.75rem;            
+  padding-bottom: 0.75rem;
+  border: 1px solid #d1d5db;        
+  border-radius: 0.5rem;            
+  outline: none;                    
+  text-align: right;                 
+  font-size: 1rem;                   
+  line-height: 1.5rem;
+  transition: all 0.2s ease-in-out; 
+}
+@media (min-width: 640px) {
+  .phone-input {
+    padding-left: 3.5rem;            
+    padding-right: 1.5rem;        
+    font-size: 1.125rem;            
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .phone-input {
+    font-size: 1.25rem;            
+    line-height: 1.75rem;
+  }
+}
+.phone-input:focus {
+  border-color: #10b981;             
+  box-shadow: 0 0 0 2px #065f46;    
+}
+.svg-phone-input-div{
+    position: absolute;         
+  left: 0.75rem;              
+  top: 50%;                   
+  transform: translateY(-50%); 
+}
+@media (min-width: 640px) {
+  .svg-phone-input-div {
+    left: 1rem;             
+  }
+}
+
+
+.password-label{
+    display: block;                
+    font-size: 0.875rem;            
+    line-height: 1.25rem;           
+    font-weight: 500;               
+    color: #374151;                
+    margin-bottom: 0.5rem;   
+     text-align: start;        
+}
+@media (min-width: 640px) {
+  .password-label {
+    font-size: 1rem;             
+    line-height: 1.5rem;
+    margin-bottom: 0.75rem;      
+  }
+}
+@media (min-width: 1024px) {
+  .password-label {
+    font-size: 1.125rem;          
+    line-height: 1.75rem;
+  }
+}
+.password-input-div{
+  position: relative;
+}
+.password-input{
+ width: 100%;                       
+  padding-left: 3rem;                
+  padding-right: 1rem;             
+  padding-top: 0.75rem;            
+  padding-bottom: 0.75rem;
+  border: 1px solid #d1d5db;        
+  border-radius: 0.5rem;            
+  outline: none;                    
+  text-align: right;                 
+  font-size: 1rem;                   
+  line-height: 1.5rem;
+  transition: all 0.2s ease-in-out; 
+}
+@media (min-width: 640px) {
+  .password-input {
+    padding-left: 3.5rem;            
+    padding-right: 1.5rem;        
+    font-size: 1.125rem;            
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .password-input {
+    font-size: 1.25rem;            
+    line-height: 1.75rem;
+  }
+}
+.password-input:focus {
+  border-color: #10b981;             
+  box-shadow: 0 0 0 2px #065f46;    
+}
+.logIn-btn{
+    background: linear-gradient(90deg, rgb(36, 100, 94) -23.06%, rgb(24, 56, 61) 53.78%, rgb(23, 52, 59) 60.46%);
+    width: 100%;                 
+    color: #ffffff;              
+    padding-top: 0.75rem;       
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;  
+    font-weight: 500;            
+    font-size: 1rem;           
+    background-color: #065f46;   
+    transition: background-color 0.2s ease; 
+    cursor: pointer;
+    border: none;
+}
+.logIn-btn:hover {
+  background-color: #064e3b;   
+}
+.logIn-btn:disabled {
+  opacity: 0.5;                
+  cursor: not-allowed;         
+}
+@media (min-width: 640px) {
+  .logIn-btn {
+    font-size: 1.125rem;      
+  }
+}
+@media (min-width: 1024px) {
+  .logIn-btn {
+    font-size: 1.25rem;        
+  }
+}
+.visitor-btn{
+    width: 100%;                    
+    border: 1px solid #d1d5db;      
+    color: #374151;                
+    padding-top: 0.75rem;           
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;          
+    background-color: white;       
+    font-weight: 500;             
+    font-size: 1rem;             
+    transition: background-color 0.2s ease; 
+    cursor: pointer;
+}
+.visitor-btn:hover {
+  background-color: #f9fafb;  
+  border: 1px solid #d1d5db;    
+}
+@media (min-width: 640px) {
+  .visitor-btn{
+    font-size: 1.125rem;         
+  }
+}
+@media (min-width: 1024px) {
+  .visitor-btn {
+    font-size: 1.25rem;           
+  }
+}
+.createAccount-link-div{
+    width: 100%;               
+    display: flex;             
+    align-items: center;        
+    justify-content: center;  
+    margin-top: 1.5rem;        
+    font-weight: 500;          
+    font-size: 1.125rem; 
+}
+.span-createAccount-link-div{
+    color: #6E6E6E;    
+    font-weight: 400; 
+}
+.createAccount-link{
+    color: #17343B ;      
+    margin-left: 0.5rem; 
+    margin-right: 0.5rem;
+    text-decoration: inherit ;
+}
+.createAccount-link:hover{
+    color: #17343B;
+}
+.footer-left-main-login-content{
+    width: 100%;                
+    display: flex;              
+    align-items: center;        
+    justify-content: center;     
+    margin-top: 1.5rem;          
+    text-align: center;        
+    overflow: hidden;           
+}
+@media (min-width: 640px) {
+  .footer-left-main-login-content {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-left-main-login-content {
+    margin-top: 3rem;
+  }
+}
+.img-footer-left-main-login-content{
+    max-width: 100%;  
+    height: auto;
+}

@@ -1,0 +1,233 @@
+.aid-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    margin: 2rem 0 0 !important; 
+}
+.aid-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+.right-aid-header{
+    position: relative;
+    background-image: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E);
+    border-top-left-radius: 0.75rem; 
+    border-bottom-left-radius: 1.5rem; 
+    color: #ffffff;
+    font-size: 1.5rem; 
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.square-aid-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%) translateX(25%);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.square{
+    position: relative;
+    background-image: linear-gradient(to right, #E8B98C, #AA8058);
+    transform: rotate(45deg);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 0.75rem;
+    width: 50px;
+    height: 50px;
+}
+.span-aid-header{
+    font-size: 1.25rem;
+    color: #16343A;
+    cursor: pointer;
+}
+/* --------------------------------------------------------------- */
+.aid-section{
+    position: relative;
+    background-image: linear-gradient(to right, #C3C4C4, #F7F8F8);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.aid-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .aid-content{
+        flex-direction: row;
+        gap: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+.right-aid-content{
+    flex: 1;
+    text-align: center;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    z-index: 1000;
+    overflow: hidden;
+}
+@media (min-width: 768px) {
+    .right-aid-content{
+        text-align: right;
+        padding-right: 4rem; 
+    }
+}
+.right-aid-content-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem; 
+    overflow: hidden;
+}
+@media (min-width: 768px) {
+    .right-aid-content-div{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+.img-right-aid-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem; 
+}
+@media (min-width: 768px) {
+.img-right-aid-content{
+  align-items: flex-start;
+}
+}
+.h2-right-aid-content{
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: #1f2937;
+      font-family: 'IBM Plex Sans Arabic', sans-serif;
+      margin-bottom: 0;
+}
+@media (min-width: 768px) {
+.h2-right-aid-content{
+  font-size: 1.875rem; 
+}
+}
+.pra-right-aid-content{
+    font-size: 1rem; 
+    color: #4b5563; 
+    line-height: 1.625; 
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+.pra-right-aid-content{
+  font-size: 1.125rem; 
+}
+}
+.right-aid-content-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+    background-image: linear-gradient(to left, #17343B, #18383D, #24645E);
+    color: #ffffff;
+    width: 100%;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
+    border-radius: 0.5rem; 
+    font-size: 1rem; 
+    font-weight: 600;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+.right-aid-content-btn{
+    justify-content: flex-start;
+    width: auto;
+    padding-left: 3rem;
+    padding-right: 3rem; 
+    font-size: 1.125rem; 
+}
+}
+.img-btn-right-aid-content{
+    width: 2rem;
+}
+@media (min-width: 768px) {
+.img-btn-right-aid-content{
+  width: 2.5rem;
+}
+}
+.left-aid-content{
+    position: relative;
+    width: 66.666667%;
+    height: 14rem; 
+    overflow: hidden;
+    z-index: 1000;
+}
+@media (min-width: 768px) {
+.left-aid-content{
+  width: 25%;
+  height: 100%;
+}
+}
+.img-left-aid-content{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-aid-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-repeat: repeat-y;
+    height: 33.333333%;
+    width: 33.333333%;
+    transform: rotate(180deg);
+    z-index: 10;
+}
+@media (min-width: 768px) {
+.img-aid-content{
+    height: 100%;
+    width: 25%;
+}
+}
+.background-left-aid-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 33.333333%;
+    background-image: url(https://zakat-ecru-gamma.vercel.app/assets/Union-CCzk7IgT.png);
+    background-repeat: repeat; 
+    transform: rotate(180deg);
+    background-size: auto;
+}
+@media (min-width: 768px) {
+.background-left-aid-content{
+  width: 40%;
+  height: 100%;
+}
+}
+.svg-left-aid-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

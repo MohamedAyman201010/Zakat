@@ -1,0 +1,286 @@
+.kafarat-content-div{
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: url("https://zakat-ecru-gamma.vercel.app/background%20pattern.png"); 
+    background-repeat: repeat;
+    background-size: auto;
+}
+.header-kafarat-content-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem; 
+    margin-top: 7rem; 
+}
+.header-kafarat-content-div-container{
+    position: relative;
+    background-image: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E);
+    border-top-left-radius: 0.75rem; 
+    border-bottom-left-radius: 1.5rem; 
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    padding: 0.5rem 2rem;
+}
+.square-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%) translateX(25%); 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+            0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.main-kafarat-content-div {
+  width: 100%;         
+  padding-left: 1rem;     
+  padding-right: 1rem;
+  margin-top: 2rem;      
+}
+@media (min-width: 768px) {
+  .main-kafarat-content-div {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.buttons-div{
+    width: 100%;           
+    display: flex;       
+    align-items: center;   
+    gap: 1.5rem;           
+    margin-bottom: 2rem; 
+}
+.frist-buttons-div-btn{
+    border: none;
+    flex: 1; 
+    padding-left: 1.5rem;   
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;   
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;  
+    font-weight: 500;      
+    font-size: 1.125rem;    
+    transition: all 0.2s ease-in-out; 
+    background-image: linear-gradient(to left, #17343B, #18383D, #24645E); 
+    color: #ffffff;
+}
+.second-buttons-div-btn{
+    flex: 1; 
+    padding-left: 1.5rem;   
+    padding-right: 1.5rem;
+    padding-top: 0.75rem; 
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;    
+    font-size: 1.125rem;   
+    transition: all 0.2s ease-in-out; 
+    background-color: #e5e7eb !important;
+    color: #374151;
+    border: none;
+}
+.second-buttons-div-btn:hover{
+      background-color: #d1d5db; 
+}
+.middle-main-kafarat-content-div{
+    display: flex;         
+    flex-direction: column;
+    gap: 2rem;  
+}
+.frist-middle-main-kafarat-content-div {
+  display: flex;         
+  flex-direction: column;    
+  align-items: center;      
+  gap: 1.5rem;               
+}
+@media (min-width: 768px) {
+  .frist-middle-main-kafarat-content-div {
+    flex-direction: row;     
+  }
+}
+.select-frist-middle-main-div{
+    flex: 1;     
+    width: 100%;
+}
+.label-select-frist-middle-main-div{
+    display: block;        
+    margin-bottom: 0.5rem; 
+    color: #374151;         
+    font-weight: 500;
+    text-align: start;
+}
+.select-frist-middle-main{
+    width: 100%;              
+    border-width: 2px;       
+    border-color: #d1d5db;    
+    border-radius: 0.5rem;       
+    padding: 0.75rem;         
+    background-color: transparent; 
+    outline: none;           
+    font-weight: 600; 
+}
+.select-frist-middle-main:focus {
+  outline: none;          
+  box-shadow: 0 0 0 2px #059669; 
+}
+.label-count{
+    display: block;
+    margin-bottom: 0.5rem;  
+    color: #374151;       
+    font-weight: 500; 
+    text-align: start;
+}
+.plus-btn{
+    background-image: linear-gradient(to left, #17343B, #18383D, #24645E); 
+    color: #ffffff;     
+    width: 2.5rem;          
+    height: 2.5rem;       
+    border-radius: 0.5rem;    
+    display: flex;           
+    align-items: center;    
+    justify-content: center;  
+    font-size: 1.25rem;     
+    font-weight: 700;       
+    transition: opacity 0.2s ease-in-out; 
+    border: none;
+}
+.plus-btn:hover {
+  opacity: 0.9;       
+}
+.input-count{
+    width: 3.5rem;            
+    border-width: 2px;       
+    border-color: #d1d5db;    
+    border-radius: 0.5rem;    
+    padding: 0.5rem;          
+    text-align: center;       
+    outline: none;
+    background-color: #ffffff;
+}
+.input-count:focus {
+  outline: none;             
+  box-shadow: 0 0 0 2px #059669; 
+}
+.minus-btn{
+    background-image: linear-gradient(to left, #17343B, #18383D, #24645E);
+    color: #ffffff;          
+    width: 2.5rem;           
+    height: 2.5rem;           
+    border-radius: 0.5rem;
+    display: flex;            
+    align-items: center;      
+    justify-content: center;   
+    font-size: 1.25rem;       
+    font-weight: 700;       
+    transition: opacity 0.2s ease-in-out;
+    border: none;
+}
+.minus-btn:hover {
+  opacity: 0.9; 
+}
+.label-price{
+    display: block;       
+    margin-bottom: 0.5rem;      
+    color: #374151;   
+    font-weight: 500;   
+    text-align: start;
+    width: 100%;
+}
+.pra-price{
+    font-size: 0.875rem; 
+    color: #4b5563;     
+    margin-top: 0.25rem;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+.input-price {
+  width: 100%;               
+  padding-left: 3rem;          
+  padding-right: 0.75rem;     
+  padding-top: 0.75rem;     
+  padding-bottom: 0.75rem;
+  border-width: 2px;          
+  border-color: #979797;      
+  border-radius: 0.5rem;       
+  font-size: 0.875rem;       
+  outline: none;             
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .input-price {
+    font-size: 1rem;         
+  }
+}
+.input-price:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #059669; 
+}
+.input-price::placeholder {
+  font-weight: 500;
+}
+.price-input-div{
+    display: flex;              
+    flex-direction: column; 
+    align-items: center;      
+}
+/* @media (min-width: 768px) {
+  .price-input-div {
+    flex-direction: row;   
+  }
+} */
+.label-textarea{
+    display: block;         
+    margin-bottom: 0.5rem;
+    color: #374151;       
+    font-weight: 500;  
+    text-align: start;
+}
+.textArea{
+    width: 100%;                 
+    border-width: 2px;           
+    border-color: #d1d5db;       
+    border-radius: 0.5rem;      
+    padding: 0.75rem;            
+    background-color: transparent;
+    outline: none;            
+    font-weight: 600;         
+    min-height: 100px;         
+    resize: vertical; 
+}
+.textArea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #059669; 
+}
+.btn-container-kafarat-content-div{
+    display: flex;        
+    justify-content: center;  
+    margin-top: 3rem;  
+    margin-bottom: 2rem;  
+}
+.btn-kafarat{
+    width: 100%;          
+    display: flex;         
+    align-items: center;        
+    justify-content: center;     
+    gap: 0.75rem;               
+    color: #ffffff;           
+    font-weight: 600;          
+    padding-top: 0.75rem;      
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;     
+    padding-right: 2rem;
+    border-radius: 0.5rem;     
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    font-size: 0.875rem;        
+    min-width: 200px;          
+    opacity: 0.5;                
+    cursor: not-allowed; 
+    background: linear-gradient(90deg, rgb(36, 100, 94) 41.45%, rgb(24, 56, 61) 83.11%, rgb(23, 52, 59) 100%);
+}
+@media (min-width: 768px) {
+  .btn-kafarat {
+    font-size: 1rem;        
+  }
+}

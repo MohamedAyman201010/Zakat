@@ -1,0 +1,184 @@
+.donateQuickly-background{
+    position: fixed; 
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 100vw; 
+    z-index: 10000; 
+    overflow-y: auto;
+}
+.donateQuickly-page {
+  background-color: #ffffff; 
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+              0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+@media (min-width: 768px) {
+  .donateQuickly-page {
+    width: 50%; 
+  }
+}
+.donateQuickly-container {
+  background-color: #ffffff; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+  display: flex;
+  flex-direction: column; 
+}
+.header-donateQuickly-container {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb; 
+}
+.h1-header-donateQuickly-container{
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    font-weight: 600;
+}
+.header-donateQuickly-container-btn{
+    width: 2rem; 
+    height: 2rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: #ffffff; 
+    border: none;
+}
+.span-header-donateQuickly-container-btn{
+    font-size: 1.25rem; 
+    line-height: 1.75rem; 
+    background: linear-gradient(to left, #17343B, #18383D, #24645E); 
+    padding: 0.25rem; 
+    border-radius: 0.375rem;
+}
+.main-donateQuickly-container {
+    padding: 1rem; 
+    flex: 1;
+    overflow-y: auto; 
+}
+
+.buttons-container-div{
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;    
+    overflow: hidden; 
+}
+.buttons-container{
+    width: 100%;                       
+    display: flex;                     
+    align-items: center;                
+    justify-content: space-between;       
+    padding: 1rem;                    
+    background-color: #ffffff;         
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 150ms;    
+    border: none;
+}
+.buttons-container:hover {
+  background-color: #f9fafb;          
+}
+.tatal-extra-zakat-div{
+  display: flex;                 
+  align-items: center;         
+  justify-content: space-between; 
+  margin-bottom: 0.5rem;
+}
+.extra-price-div{
+    display: flex;              
+    align-items: center;            
+    justify-content: space-between;
+}
+.right-extra-price-div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.left-extra-price-div{
+    position: relative;
+    width: 6rem; 
+}
+.input-left-extra-price-div{
+    width: 100%;                
+    padding: 0.5rem;             
+    padding-right: 2rem;          
+    border: 1px solid #d1d5db;    
+    border-radius: 0.25rem;        
+    font-size: 0.875rem;         
+    outline: none;             
+}
+.input-left-extra-price-div:focus {
+  box-shadow: 0 0 0 2px #0f766e;   
+}
+.icon-left-extra-price-div{
+    position: absolute;          
+    left: 0.5rem;                      
+    top: 50%;                           
+    transform: translateY(-50%);       
+    width: 1.5rem;                     
+    height: 1.5rem;                    
+    display: flex;                     
+    align-items: center;           
+    justify-content: center;  
+}
+.total-main-donateQuickly-container{
+    margin-top: 1rem;                 
+    display: flex;                    
+    align-items: center;               
+    justify-content: space-between;
+}
+.footer-donateQuickly-container-btn {
+  width: 100%; 
+  background: linear-gradient(to left, #17343B, #18383D, #24645E); 
+  color: #ffffff;
+  padding-top: 1rem;   
+  padding-bottom: 1rem; 
+  border-radius: 0.5rem;
+  font-weight: 500;    
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; 
+  transition-duration: 150ms;
+  cursor: pointer;
+    border: none;
+}
+.footer-donateQuickly-container-btn:hover {
+  background-color: #065f46;
+}
+.footer-donateQuickly-container-btn:disabled {
+  opacity: 0.5;         
+  cursor: not-allowed;   
+}
+.pra-main-donateQuickly-container{
+    font-size: 1.125rem; 
+    font-weight: 600;    
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+.slide-right {
+  animation: slideFromRight 0.4s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left{
+    animation: slideFromLeft 0.4s ease-in-out;
+}
+@keyframes slideFromLeft {
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

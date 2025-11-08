@@ -1,0 +1,174 @@
+.news-div{
+    display: flex;       
+    flex-direction: column; 
+    gap: 1.5rem;          
+    margin: 2rem 0 0 !important; 
+}
+.news-header{
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between;
+    padding-left: 3rem;   
+}
+.right-news-header{
+    position: relative; 
+    background-image: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E); 
+    border-top-left-radius: 0.75rem; 
+    border-bottom-left-radius: 1.5rem; 
+    color: #ffffff; 
+    font-size: 1.5rem;
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+}
+.square-news-header-div{
+    display: flex;         
+    align-items: center;           
+    justify-content: center;      
+    position: absolute;       
+    right: -1rem;                  
+    top: 50%;                       
+    transform: translateY(-50%) translateX(25%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+}
+.square-news-header{
+    position: relative;
+    background-image: linear-gradient(to right, #E8B98C, #AA8058); 
+    transform: rotate(45deg); 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    border-radius: 0.75rem; 
+    width: 50px;
+    height: 50px;
+}
+.link-news-header{
+    font-size: 1.25rem;     
+    color: #16343A;           
+    cursor: pointer;         
+    transition-property: color; 
+    transition-duration: 150ms;
+      text-decoration: none;
+}
+.link-news-header:hover{
+     color: #24645E; 
+}
+.news-section{
+    position: relative;
+}
+@media (min-width: 768px) {
+  .news-section {
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+}
+.right-shadow-news-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8rem; 
+    background: linear-gradient(to left, #ffffff, transparent);
+    z-index: 1000;
+    pointer-events: none;
+}
+@media (min-width: 768px) {
+  .right-shadow-news-section {
+    right: 2rem; 
+  }
+}
+.left-shadow-news-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8rem;
+    background: linear-gradient(to right, #ffffff, transparent);
+    z-index: 1000;
+    pointer-events: none;
+}
+@media (min-width: 768px) {
+  .left-shadow-news-section {
+    left: 2rem; 
+  }
+}
+.news-card-div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.news-card-div::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .news-card-div {
+    padding-right: 2rem; 
+  }
+}
+/* ----------------------------------------card style --------------------------------------------------*/
+.newsCard-section{
+    flex-shrink: 0;
+}
+.newsCard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; 
+    padding: 0.75rem; 
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background: linear-gradient(to top left, #DEDEDE, #FFFFFF);
+    overflow: hidden;
+    width: 320px;
+}
+.img-newsCard{
+    height: 8rem; 
+    border-radius: 0.375rem; 
+    object-fit: cover;
+    width: 100%; 
+}
+.newsCard-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem; 
+}
+.h1-newsCard-content{
+    font-size: 1.5rem; 
+    line-height: 2rem;  
+    font-weight: 700;
+    margin-bottom: 0 ;
+    text-align: start;
+}
+.pra-newsCard-content{
+    color: #3C3C43;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0 ;
+    text-align: start;
+}
+.newsCard-content-btn{
+    margin-top: 1.5rem; 
+    flex: 1 1 0%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; 
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    border-radius: 0.5rem; 
+    color: #ffffff; 
+    background: linear-gradient(to bottom, #17343B, #18383D, #24645E);
+    border: none;
+    outline: none;
+}
+.newsCard-content-btn:hover{
+  border: none !important;
+
+}

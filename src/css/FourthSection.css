@@ -1,0 +1,180 @@
+.library-div{
+    display: flex;       
+    flex-direction: column; 
+    gap: 1.5rem;          
+    margin: 2rem 0 0 !important; 
+}
+.library-header{
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between;
+    padding-left: 3rem;  
+}
+.right-library-header{
+    position: relative; 
+    background-image: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E); 
+    border-top-left-radius: 0.75rem; 
+    border-bottom-left-radius: 1.5rem; 
+    color: #ffffff; 
+    font-size: 1.5rem;
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+}
+.square-library-header-div{
+    display: flex;         
+    align-items: center;           
+    justify-content: center;      
+    position: absolute;       
+    right: -1rem;                  
+    top: 50%;                       
+    transform: translateY(-50%) translateX(25%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+}
+.square-library-header{
+    position: relative;
+    background-image: linear-gradient(to right, #E8B98C, #AA8058); 
+    transform: rotate(45deg); 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    border-radius: 0.75rem; 
+    width: 50px;
+    height: 50px;
+}
+.link-library-header{
+    font-size: 1.25rem;     
+    color: #16343A;           
+    cursor: pointer;         
+    transition-property: color; 
+    transition-duration: 150ms;
+      text-decoration: none;
+}
+.link-library-header:hover{
+     color: #24645E; 
+}
+/* ------------------------------------------------------------------------------- */
+.library-section{
+    position: relative;
+}
+@media (min-width: 768px) {
+  .library-section {
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+}
+.right-shadow-library-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8rem; 
+    background: linear-gradient(to left, #ffffff, transparent);
+    z-index: 1000;
+    pointer-events: none;
+}
+@media (min-width: 768px) {
+  .right-shadow-library-section {
+    right: 2rem; 
+  }
+}
+.left-shadow-library-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8rem;
+    background: linear-gradient(to right, #ffffff, transparent);
+    z-index: 1000;
+    pointer-events: none;
+}
+@media (min-width: 768px) {
+  .left-shadow-library-section {
+    left: 2rem; 
+  }
+}
+.library-cards-div {
+  display: flex;              
+  align-items: center;        
+  gap: 1.5rem;                 
+  overflow-x: auto;            
+  -ms-overflow-style: none;    /* إخفاء السكرول في Internet Explorer و Edge القديم */
+  scrollbar-width: none;       /* إخفاء السكرول في Firefox */
+}
+/* لإخفاء شريط التمرير في Chrome و Safari و Edge الحديث */
+.library-cards-div::-webkit-scrollbar {
+  display: none; 
+}
+@media (min-width: 768px) {
+  .library-cards-div {
+    padding-right: 2rem; 
+  }
+}
+/* --------------------------------------Card Style---------------------------------------------- */
+.libraryCard-section{
+    flex-shrink: 0;
+}
+.libraryCard{
+  position: relative;                       
+  cursor: pointer;                          
+  display: flex;                       
+  flex-direction: column;                     
+  gap: 1.25rem;                            
+  padding: 1.5rem;                            
+  border-radius: 1rem;                         
+  border: 1px solid #B7B7B7;                  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  background: linear-gradient(
+    to right,
+    rgba(252, 252, 252, 0.4),
+    rgba(199, 199, 199, 0.4)
+  );                                      
+  overflow: hidden;                        
+  width: 320px;        
+}
+.img-libraryCard{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.libraryCard-content{
+  display: flex;         
+  align-items: center;    
+  gap: 0.75rem;          
+  position: relative;    
+  z-index: 10;  
+}
+.img-libraryCard-content{
+    width: 8rem;
+    height: 8rem; 
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.h2-libraryCard-content{
+  font-size: 1.25rem;   
+  line-height: 1.75rem; 
+  font-weight: 600; 
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 20px;
+    margin-bottom: 0;
+}
+.numberOffice-div{
+  display: flex;          
+  align-items: center;     
+  gap: 0.5rem;  
+
+}
+.h2-numberOffice-div{
+  font-size: inherit;
+  font-weight: inherit;
+  margin-bottom: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.officeText-div{
+  display: flex;           
+  flex-direction: column; 
+  gap: 1rem;        
+}

@@ -1,0 +1,125 @@
+.statistics-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.statistics-div-header{
+    display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding-left: 3rem; 
+}
+.statistics-div-header-content{
+    position: relative;
+    background: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E);
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 1.5rem; 
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+}
+.square-statistics-div{
+    display: flex;
+    align-items: center;         
+    justify-content: center;   
+    position: absolute;
+    right: -1rem;                
+    top: 50%;          
+    transform: translateY(-50%) translateX(25%);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1),
+                0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+.square{
+    position: relative;
+    background: linear-gradient(to right, #E8B98C, #AA8058);
+    transform: rotate(45deg);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1),
+            0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    border-radius: 0.75rem;
+    width: 50px;
+    height: 50px;
+}
+/* ---------------------------------- */
+.statistics-div-main{
+    margin-top: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem; 
+    overflow: hidden;
+    background-color: #18383D;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+    padding-top: 3rem; 
+    padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .statistics-div-main { 
+    flex-direction: row;
+    padding-right: 2rem; 
+  }
+}
+/* --------------------------------------------------------- */
+.statisticsCard{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem; 
+    overflow: hidden;
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    width: 24rem; 
+    height: 10rem;
+    background: linear-gradient(90deg, rgba(36, 100, 94, 0.5) -6.91%, rgba(57, 104, 112, 0.5) 62.58%, rgba(59, 136, 154, 0.5) 100%);
+}
+.img-statisticsCard{
+    position: absolute;
+    left: 0;            
+    top: 0;      
+}
+.statisticsCard-content{
+    display: flex;          
+    flex-direction: column; 
+    gap: 0.75rem;         
+    color: white;   
+}
+.praTitle-statisticsCard-content{
+    font-size: 1.125rem; 
+    font-weight: 600; 
+    margin-bottom: 0 !important;
+}
+.praContent-statisticsCard-content{
+    font-size: 1.125rem;
+    font-weight: 400; 
+    margin-bottom: 0 !important;
+}
+.statistics-btn-div{
+    width: 100%;            
+    display: flex;         
+    align-items: center;      
+    justify-content: center;  
+    background-color: #18383D;
+    padding-top: 1rem;     
+    padding-bottom: 1rem;  
+}
+.statistics-btn{
+    color: white;         
+    padding-left: 1.5rem;  
+    padding-right: 1.5rem;  
+    padding-top: 0.75rem;  
+    padding-bottom: 0.75rem;
+    border-radius: 0.375rem;
+    display: flex;         
+    align-items: center;    
+    gap: 0.5rem;       
+    background: linear-gradient(90deg, rgba(36, 100, 94, 0.5) -6.91%, rgba(57, 104, 112, 0.5) 62.58%, rgba(59, 136, 154, 0.5) 100%);
+    border: 0 ;
+}

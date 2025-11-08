@@ -1,0 +1,182 @@
+.main-zakat-div{
+    padding-top: 4rem;
+}
+@media (min-width: 1024px) {
+  .main-zakat-div {
+    padding-top: 5rem;
+  }
+}
+.scroll-normal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-normal::-webkit-scrollbar-thumb {
+  background-color: #007c65;
+  border-radius: 3px;
+}
+
+.scroll-normal::-webkit-scrollbar-track {
+  background: #f4f8fa;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  width: 0;
+}
+
+.scroll-hidden::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.scroll-hidden::-webkit-scrollbar-track {
+  background: transparent;
+}
+.main-zakat-content{
+    position: relative;
+    overflow: hidden;
+}
+.background-main-zakat-content{
+    position: relative; 
+    z-index: 10;
+    margin-left: auto;  
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex; 
+    flex-direction: column; 
+    row-gap: 1rem; 
+    min-height: 100vh;
+    background-image: url("https://zakat-ecru-gamma.vercel.app/background%20pattern.png"); 
+    background-repeat: repeat;
+    background-size: auto;
+}
+.leftBow,.rightBow{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(180deg,#d3a67a,#b48960);
+    background-clip: border-box;
+    -webkit-mask-image: radial-gradient(ellipse at center,black 70%,transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    mask-image: radial-gradient(ellipse at center,black 70%,transparent 100%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    background-clip: border-box;
+}
+.left-bow{
+    left: 0;
+    transform: scaleX(-1);
+}
+.header-background-main-zakat-content{
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    row-gap: 1.5rem;
+}
+.title-header-background-main-zakat-content{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding-left: 3rem; 
+    margin-top: 7rem;
+}
+.title-header-container{
+    position: relative; 
+    background: linear-gradient(to left, rgb(23, 52, 59), #18383D, #24645E); 
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 1.5rem;
+    color: white;
+    font-size: 1.5rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+}
+.square-div{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: absolute; 
+    right: -1rem; 
+    top: 50%; 
+    transform: translateY(-50%) translateX(25%);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+            0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.square{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: linear-gradient(to right, #E8B98C, #AA8058); 
+    transform: rotate(45deg);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
+    border-radius: 0.75rem;
+}
+.main-background-main-zakat-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  gap: 3rem;
+  margin-right: 0.5rem;
+}
+@media (min-width: 768px) {
+  .main-background-main-zakat-content {
+    flex-direction: row; 
+  }
+}
+.container-main-background-main-zakat-content{
+    position: relative;
+    height: 100%;
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+    padding: 1.5rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    flex: 1; 
+    max-height: 12rem; 
+    width: 100%;
+    background: linear-gradient(270deg, rgba(36, 100, 94, 0) 0%, rgba(24, 56, 61, 0.2) 69.49%, rgba(23, 52, 59, 0.4) 106.91%);
+}
+@media (min-width: 1024px) {
+  .container-main-background-main-zakat-content {
+    max-width: 30%; 
+  }
+}
+.pra-container-main-background-main-zakat-content{
+    font-weight: 500;
+    color: #515151;
+    font-size: 1rem; 
+    line-height: 1.625; 
+    z-index: 10;
+    margin-bottom: 1.25rem;
+    text-align: start;
+}
+.container-main-background-main-zakat-content-btn{
+    background-color: #17343B;
+    border-radius: 0.5rem; 
+    padding: 0.125rem; 
+    position: absolute;
+    left: 0.5rem; 
+    bottom: 0.5rem;
+    border: none;
+}
+.header-container-main-background-main-zakat-content{
+    display: flex;
+    flex-direction: column; 
+    gap: 0.75rem;
+    text-align: start;
+}
+.pra-header-container-main-background-main-zakat-content{
+    font-weight: 700; 
+    color: #17343B;
+    font-size: 1.25rem; 
+    line-height: 1.75rem;
+    margin-bottom: 0 !important;
+}
